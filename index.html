@@ -8,13 +8,19 @@
 </head>
 <body>
     <script>
+        let x=0
     function setup () {
         createCanvas(windowWidth-20,windowHeight-20)
     }
     function draw(){
         background("#98D9C2")
         fill("#403233")
-        square(0,0,50)
+        square(x,0,50)
+        if (keyIsPressed=== true){
+            if (keyCode===68){
+                x=x+1
+            }
+        }
     }
 </script>
     
