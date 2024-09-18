@@ -8,7 +8,9 @@
 </head>
 <body>
     <script>
-        let x=0
+    let x=0
+    let cloudx=windowWidth/2
+
     function setup () {
         createCanvas(windowWidth-20,windowHeight-20)
     }
@@ -20,11 +22,12 @@
         //cloud
         fill("#B5838D")
         noStroke()
-        circle(windowWidth/2-50,100,100)
-        circle(windowWidth/2+50,100,100)
-        circle(windowWidth/2,70,100)
-
-        //lightnning bolt
+        circle(cloudx-50,100,100)
+        circle(cloudx+50,100,100)
+        circle(cloudx,70,100)
+        //cloud motion
+        cloudx+=1
+        //lightning bolt
         fill("yellow")
         noStroke()
         quad(windowWidth/2-25,125,windowWidth/2+25,125,windowWidth/2-15,150,windowWidth/2+15,150)
