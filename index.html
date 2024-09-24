@@ -11,6 +11,7 @@
     let x=0
     let cloudx=0
     let forward=true
+    let lx=0
 
     function setup () {
         createCanvas(windowWidth-20,windowHeight-20)
@@ -34,7 +35,17 @@
         //lightning bolt
         fill("yellow")
         noStroke()
-        quad(windowWidth/2-25,125,windowWidth/2+25,125,windowWidth/2-15,150,windowWidth/2+15,150)
+        quad(lx-25,125,lx+25,125,lx-15,150,lx+15,150)
+        //lightning bolt movement
+        if(forward==true){
+            lx+=1}else{lx-=1}
+        if(lx > windowWidth){
+            forward = false
+        }
+        if(lx < 0){
+            forward = true
+        }
+
         if(cloudx > windowWidth){
             forward = false
         }
