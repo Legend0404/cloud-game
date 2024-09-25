@@ -13,6 +13,7 @@
     let forward=true
     let lx=0
     let ly=0
+    let lTR=false
 
     function setup () {
         createCanvas(windowWidth-20,windowHeight-20)
@@ -51,6 +52,7 @@
             forward = true
         }
         //chose a random x and then decrease y by 5 when it gets to window height go back to cloud and repeat
+        setTimeout(console.log("ya"),3000)
     }
     function keyPressed(){
         if (keyCode===68){
@@ -60,7 +62,7 @@
             x-=15
         }
     }
-console.log("20:02")</script>
+console.log("20:20")</script>
     
 </body>
 </html>
