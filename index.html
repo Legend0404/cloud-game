@@ -40,9 +40,6 @@
         //lightning bolt movement
         if(forward==true){
             lx+=1}else{lx-=1}
-        if(lx > windowWidth){
-            forward = false
-        }
         if(lx < 0){
             forward = true
         }
@@ -53,6 +50,7 @@
         if(cloudx < 0){
             forward = true
         }
+        //chose a random x and then decrease y by 5 when it gets to window height go back to cloud and repeat
     }
     function keyPressed(){
         if (keyCode===68){
