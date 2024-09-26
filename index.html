@@ -52,6 +52,9 @@
             forward = true
         }
         //chose a random x and then decrease y by 5 when it gets to window height go back to cloud and repeat
+        if(movedown == false){
+        ly-=5
+    }
     }
     function keyPressed(){
         if (keyCode===68){
@@ -66,9 +69,6 @@
         console.log("ya")
     }
     setInterval(movedown,3000)
-    if(movedown == false){
-        ly-=5
-    }
 console.log("11:31")</script>
     
 </body>
