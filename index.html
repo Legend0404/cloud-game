@@ -13,7 +13,7 @@
     let forward=true
     let lx=0
     let ly=0
-    let lTR=false
+    let movedown=false
 
     function setup () {
         createCanvas(windowWidth-20,windowHeight-20)
@@ -66,6 +66,9 @@
         console.log("ya")
     }
     setInterval(movedown,3000)
+    if(movedown == true){
+        ly-=5
+    }
 console.log("20:33")</script>
     
 </body>
