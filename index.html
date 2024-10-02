@@ -55,6 +55,9 @@
         if(movedown == true){
             ly+=5
         }
+        if (ly > windowHeight){
+            ly = 0
+        }
     }
     function keyPressed(){
         if (keyCode===68){
