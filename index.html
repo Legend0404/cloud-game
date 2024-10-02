@@ -31,8 +31,8 @@
         circle(cloudx,70,100)
         //cloud motion
         if(forward==true){
-            cloudx+=1}else{
-                cloudx-=1
+            cloudx+=5}else{
+                cloudx-=5
             }
         //lightning bolt
         fill("yellow")
@@ -40,7 +40,7 @@
         quad(lx-25,ly+125,lx+25,ly+125,lx-15,ly+150,lx+15,ly+150)
         //lightning bolt movement
         if(forward==true){
-            lx+=1}else{lx-=1}
+            lx+=5}else{lx-=5}
         if(lx < 0){
             forward = true
         }
