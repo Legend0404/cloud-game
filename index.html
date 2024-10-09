@@ -14,13 +14,14 @@
     let lx=0
     let ly=0
     let movedown= false
+    let score=0
 
     function setup () {
         createCanvas(windowWidth-20,windowHeight-20)
     }
     function draw(){
         background("#98D9C2")
-        text("scorede",100,100)
+        text("score: "+score,100,100)
         fill("#403233")
         square(x,windowHeight-50,50)
 
@@ -74,7 +75,7 @@
         movedown = true
     }
     setInterval(ltDown,3000)
-console.log("20:37")</script>
+console.log("20:40")</script>
     
 </body>
 </html>
