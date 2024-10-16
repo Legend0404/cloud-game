@@ -63,8 +63,10 @@
         }
         //pseudocode logic for if the ligghtning blot is touching the square by one increase score by 1
         //style and position the score board
-        if (ly > windowHeight){
-            console.log("at the bottom")
+        if (ly > windowHeight-50){
+           if (lx > x && lx < x+50){
+            console.log("hit")
+           }
         }
     }
     function keyPressed(){
@@ -81,7 +83,7 @@
         movedown = true
     }
     setInterval(ltDown,3000)
-console.log("20:06")</script>
+console.log("20:25")</script>
     
 </body>
 </html>
